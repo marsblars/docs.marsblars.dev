@@ -1,11 +1,20 @@
 version: '3'
-
-networks:
-  marbles:
-    driver: bridge
-    external: true
-
 services:
+
+  site:
+    container_name: site
+    image: site:latest
+    restart: unless-stopped
+    networks:
+     - marbles
+    labels:
+      traefik.enable: true
+      traefik.http.routers.site.entryPoints: https
+      traefik.http.routers.site.rule: Host(`docs.marsblars.dev`)
+    build:
+      context: ./
+      dockerfile: dockerfile 
+
   jekyll:
     image: jekyll/jekyll:latest
     command: jekyll serve --watch --force_polling --verbose
@@ -13,9 +22,11 @@ services:
      - marbles
     labels:
       traefik.enable: true
-      traefik.http.routers.jekyll.entryPoints: https
-      traefik.http.routers.jekyll.rule: Host(`blog.marsblars.dev`)
+      traefik.http.routers.jekyll.entryPoints: https    
     volumes:
       - .:/srv/jekyll
 
-
+networks:
+  marbles:
+    driver: bridge
+    external: true

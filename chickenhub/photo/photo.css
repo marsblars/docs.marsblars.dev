@@ -1,0 +1,29 @@
+img {
+    
+    width: 30%;
+    margin: calc(10%/6);
+    
+}
+#txt {
+    width: 3.8%;
+    font-size: 1.3em;
+    padding: 0 .5%;
+    padding-right: .5%;
+    padding-left: 0;
+    border: 2px solid black;
+    text-transform: uppercase;
+    border-left: dashed #333e7cab;
+    margin-top: .5%;
+    margin-left: calc(10%/6);;
+    
+}
+nav > ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+body {
+    background-color: #415a77ab;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+}

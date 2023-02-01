@@ -1,0 +1,26 @@
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #e7c6ff;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+
+}
+h1 {
+    margin-bottom: 0;
+    font-size: 3rem;
+}
+h1 + h2 {
+    margin-top: 10px;
+}
+h1,h2,h3 {
+    font-family: Roboto, sans-serif ;
+    font-weight: 100;
+}
+nav > ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}

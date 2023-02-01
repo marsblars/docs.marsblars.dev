@@ -1,0 +1,16 @@
+nav > ul {
+    font-size: x-large;
+    
+    list-style-type: none;
+    
+    text-align: center;
+}
+#butt {
+    padding: 0 .6em;
+    background-color: #78aef5ab;
+    border: 1px solid #187cff;
+    border-radius: .2em;
+}
+body {
+    background-color: #feeafa;
+}

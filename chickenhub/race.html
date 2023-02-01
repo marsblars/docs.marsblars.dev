@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Race Registration Form</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Race Registration</h1>
+    <form action="/" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="First" />
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="Last" />
+        <p>Select a race:</p>
+        <input type="radio" id="fivek" name="race"/>
+        <label for="fivek">Fun Run 5k</label><br />
+        <input type="radio" id="half" name="race"/>
+        <label for="half">Half Marathon</label><br />
+        <input type="radio" id="full" name="race"/>
+        <label for="full">Full Marathon</label><br />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required/>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="pass" min="7"/><br />
+        <label for="drop">Select Age Group</label>
+        <select name="group">
+            <option value="opt1">under 18</option>
+            <option value="opt1">over 18</option>
+            <option value="opt1">65 and up</option>
+        </select>
+        <br />
+        <button>Register</button>
+
+    </form>
+
+    <br />
+
+    <footer>
+        <nav>
+        <hr />
+        <ul>
+            <li><a href="index.html">Home</a>  &ensp;&lfloor;&Pi;&rfloor;</li>
+        </ul>
+    </nav>
+    </footer>
+</body>
+</html>

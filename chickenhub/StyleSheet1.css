@@ -1,0 +1,183 @@
+﻿h1 {
+    color: darkblue;
+    text-align: center;
+    font-size:69px;
+    text-decoration: red underline double;
+}
+a {
+    text-decoration:none;
+}
+h2
+{
+    color: red;
+    text-align:center;
+}
+
+body {
+    background-color: lemonchiffon;
+}
+input {
+    
+    
+    color: red;
+}
+input {
+    background-color: rgb(219,191,253);
+}
+textarea {
+    background-color: rgb(219,191,253);
+}
+textarea {
+    color: red;
+}
+select {
+    background-color: rgb(219,191,253);
+}
+button {
+    background-color: rgb(173,245,223);
+}
+caption {
+    color: red;
+}
+h3 {
+    color: orange;
+}
+h4 {
+    color: green;
+}
+h5 {
+    color: blue;
+    
+} 
+h6 {
+    color: rebeccapurple;
+}
+p {
+    line-height: 2.0;
+    text-align-last:center;
+}
+footer {
+    text-align:center;
+}
+table {
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+#sec {
+    font-size: 20px;
+}
+#b {
+    font-size: 1em;
+    padding: 0 1em;
+    background-color: #eee4e1;
+    border-radius: .5em;
+    
+}
+#rems ul {
+    font-size: 1rem;
+    
+}
+#op {
+    opacity: .4;
+}
+#o {
+    opacity: .4;
+}
+nav > ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 0 1em;
+}
+hr {
+    border: 1px dotted red;
+}
+#chkn {
+    width: 38em;
+    height: 50em;
+}
+
+#finger {
+    width: 13em;
+    height: 15em;
+}
+p {
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+.head, .footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1080px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #one {
+        margin-bottom: 0;
+    }
+    #two {
+        margin: 0;
+    }
+    #three {
+        margin: 0;
+    }
+    #four {
+        margin: 0;
+    }
+    #five {
+        margin: 0;
+    }
+    
+    #six {
+        order: 5;
+        margin-top: 0;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 500px;
+
+    }
+
+    #oneb {
+        
+        margin: 0;
+    }
+    #twob {
+        
+        margin: 0;
+    }
+    #threeb {
+        margin: 0;
+    }
+    #fourb {
+        margin: 0;
+    }
+    #fiveb {
+        margin: 0;
+    }
+    
+    #sixb {
+        order: 5;
+        margin-top: 0;
+    }
+
+}
+.chkn {
+    display: flex;
+    justify-content: center;
+   
+}

@@ -1,0 +1,29 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #3d2645;
+  transition: border-color .25s, color .25s, box-shadow .25s, transform .25s;
+}
+
+button {
+  background: none;
+  color: #ffef9f;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+}
+button:hover {
+  border-color: #f5b700 ;
+  color: white;
+  box-shadow: 0 .5em .5em -.4em #f5b700 ;
+  transform: translateY(-.25em) ;
+  cursor: pointer;
+}
+nav > ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
