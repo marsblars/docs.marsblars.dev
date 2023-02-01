@@ -1,0 +1,21 @@
+version: '3'
+
+networks:
+  marbles:
+    driver: bridge
+    external: true
+
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    command: jekyll serve --watch --force_polling --verbose
+    networks:
+     - marbles
+    labels:
+      traefik.enable: true
+      traefik.http.routers.jekyll.entryPoints: https
+      traefik.http.routers.jekyll.rule: Host(`blog.marsblars.dev`)
+    volumes:
+      - .:/srv/jekyll
+
+
