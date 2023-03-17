@@ -1,32 +1,51 @@
+# version: '3'
+# services:
+
+#   # site:
+#   #   container_name: site
+#   #   restart: unless-stopped
+#   #   ports:
+#   #     - "4444:4444"
+#   #   networks:
+#   #     - marbles
+#   #   volumes:
+#   #     - .:/usr/share/nginx/html/
+#   #   labels:
+#   #     traefik.enable: true
+#   #     traefik.http.routers.site.entryPoints: https
+#   #     traefik.http.routers.site.rule: Host(`docs.marsblars.dev`)
+#   #   build:
+#   #     context: ./
+#   #     dockerfile: dockerfile
+ 
+
+#   jekyll:
+#     image: jekyll/jekyll:latest
+#     command: jekyll serve --watch --force_polling --host 0.0.0.0 --verbose 
+#     ports:
+#       - 4000:4000
+#     # networks:
+#     #  - marbles
+#     #labels:
+#     #   traefik.enable: true
+#     #   traefik.http.routers.jekyll.entryPoints: https    
+#     volumes:
+#       - /home/tv/docs.marsblars.dev:/srv/jekyll
+#     restart: unless-stopped
+# networks:
+#   marbles:
+#     driver: bridge
+#     external: true
 version: '3'
 services:
-
-  site:
-    container_name: site
-    image: site:latest
-    restart: unless-stopped
-    networks:
-     - marbles
-    labels:
-      traefik.enable: true
-      traefik.http.routers.site.entryPoints: https
-      traefik.http.routers.site.rule: Host(`docs.marsblars.dev`)
+  nginx:
     build:
-      context: ./
-      dockerfile: dockerfile 
-
-  jekyll:
-    image: jekyll/jekyll:latest
-    command: jekyll serve --watch --force_polling --verbose
-    networks:
-     - marbles
-    labels:
-      traefik.enable: true
-      traefik.http.routers.jekyll.entryPoints: https    
+      context: .
+      dockerfile: dockerfile
+#    image: nginx:latest
+    ports:
+      - "9876:80"
     volumes:
-      - .:/srv/jekyll
-
-networks:
-  marbles:
-    driver: bridge
-    external: true
+#      - ./nginx:/etc/nginx/conf.d
+      - ./_site:/usr/share/nginx/html/
+    restart: unless-stopped

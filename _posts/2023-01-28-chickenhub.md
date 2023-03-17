@@ -2,7 +2,7 @@
 layout: post
 title: "Colt Steele's Web Development Bootcamp 2023 "
 date: 2023-01-28 18:56:00 -0500
-categories: [Websites]
+categories: [Self-Hosted]
 tags: [udemy,website,html-css,javascript]
 ---
 

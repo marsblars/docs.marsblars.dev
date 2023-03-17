@@ -87,12 +87,6 @@ JEKYLL_ENV=production bundle exec jekyll b
 
 This will output the production site to `_site`
 
-## Building Site in CI
-
-This site already works with GitHub actions, just push it up and check the actions Tab.,
-
-For GitLab you can see the [pipeline I built for my own docs site here](https://github.com/techno-tim/techno-tim.github.io/blob/master/.gitlab-ci.yml#L18)
-
 ## Building with Docker
 
 Create a `Dockerfile` with the following
