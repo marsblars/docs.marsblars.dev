@@ -136,22 +136,9 @@ storage:
     database: authelia
     username: authelia
     password: ""
+    
 notifier:
- # disable_startup_check: false
- # smtp:
- #   username: xbox720730@gmail.com
-  #  password: "M5UjctvZB8iutbYL!y"
-   # host: smtp.gmail.com
-  #  port: 587
-  #  sender: xbox720730@gmail.com
-   # identifier: localhost
-  #  subject: "[Authelia] {title}"
- #  startup_check_address: test@authelia.com
- #   disable_require_tls: false
- #   disable_html_emails: false
- #   tls:
-  #    skip_verify: false
-  #    minimum_version: TLS1.2
+
   filesystem:
     filename: /config/notification.txt
 ...
