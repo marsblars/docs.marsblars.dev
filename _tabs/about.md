@@ -7,7 +7,7 @@ order: 4
 Hi there! My name is Marselo, and I am currently a college student pursuing a degree in Computer Science.
 My current areas of interest include web development, game development, artificial intelligence, self-hosting, and docker. I believe in constantly improving my skills and staying up-to-date with the latest technologies in these fields.
 
-In my free time, I love to spend time with my furry friend, Canela.
+In my free time, I love to spend time with my dog, Canela.
 
 I am also passionate about playing music and working out. I enjoy exploring new ideas and finding creative solutions to problems.
 
