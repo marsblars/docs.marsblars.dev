@@ -58,7 +58,7 @@ ports:
 ```yml
 ---
 theme: dark
-jwt_secret: "VkYp2s5v8y/B?E(H+MbQeThWmZq4t6w9"
+jwt_secret: ""
 default_redirection_url: https://example.com/
 server:
   host: 0.0.0.0
@@ -120,7 +120,7 @@ session:
   redis:
     host: redis
     port: 6379
-    password: "Marselo1"
+    password: ""
     database_index: 0
     maximum_active_connections: 10
     minimum_idle_connections: 0
@@ -170,10 +170,10 @@ notifier:
 # List of users
 users:
   marbles:
-    displayname: "Marbles"
+    displayname: ""
     # Password is Authelia
-    password: "$argon2id$v=19$m=65536,t=3,p=4$vOz5QfqZLs1jwOrkFO/EXA$EeWKEKJmrHUxtysv4FoSN4IqJU4HYnDf9Gh7ReLvGMs" 
-    email: xbox720730@gmail.com
+    password: "" 
+    email: 
     groups:
       - admins
       - dev
